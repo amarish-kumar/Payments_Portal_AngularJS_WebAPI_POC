@@ -1,0 +1,114 @@
+2018-02-23 16:53:22,232 [10] INFO  WebAPIService.Controllers.PaymentsController [(null)] - Request recieved from Client.System.Web.Http.WebHost.HttpControllerHandler+LazyStreamContent
+2018-02-23 16:53:22,251 [10] INFO  WebAPIService.Controllers.PaymentsController [(null)] - Request failed.
+System.NotImplementedException: The method or operation is not implemented.
+   at WebAPIService.Helper.PaymentsHelper.SavePaymentDetails(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\PaymentsHelper.cs:line 13
+   at WebAPIService.Controllers.PaymentsController.Post(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Controllers\PaymentsController.cs:line 41
+2018-02-23 16:59:28,824 [9] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client.
+2018-02-23 16:59:28,842 [9] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-23 17:00:08,798 [15] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client.Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:00:08,809 [15] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-23 17:18:19,778 [10] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+
+2018-02-23 17:18:45,484 [10] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-23 17:20:18,605 [14] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:20:18,620 [14] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-23 17:22:07,700 [16] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:22:07,753 [16] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-23 17:23:12,474 [9] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:23:12,521 [9] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-23 17:24:12,571 [4] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:24:12,621 [4] INFO  WebAPIService.Controllers.PaymentsController - Request failed.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Program Files (x86)\IIS Express\~\payments_details.txt'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at WebAPIService.Utilities.NotePadWriter.get_Instance() in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\NotePadWriter.cs:line 27
+   at WebAPIService.Helper.PaymentsHelper.SavePaymentDetails(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\PaymentsHelper.cs:line 26
+   at WebAPIService.Controllers.PaymentsController.Post(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Controllers\PaymentsController.cs:line 41
+2018-02-23 17:27:22,274 [16] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:27:22,319 [16] INFO  WebAPIService.Controllers.PaymentsController - Request failed.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\62164aaf\ed5fbb91\assembly\dl3\03420914\ce35f870_9dacd301\WebAPIService.dll\payments_details.txt'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at WebAPIService.Utilities.NotePadWriter.get_Instance() in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\NotePadWriter.cs:line 28
+   at WebAPIService.Helper.PaymentsHelper.SavePaymentDetails(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\PaymentsHelper.cs:line 26
+   at WebAPIService.Controllers.PaymentsController.Post(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Controllers\PaymentsController.cs:line 41
+2018-02-23 17:40:25,367 [42] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+DNT: 1
+
+2018-02-23 17:40:25,392 [42] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
