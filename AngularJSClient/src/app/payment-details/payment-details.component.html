@@ -1,0 +1,63 @@
+<mat-card>
+  <mat-toolbar>
+    <span>Fill out the details.</span>
+  </mat-toolbar>
+  <div class="input-group">
+    <form [formGroup]="formGroup" novalidate (ngSubmit)="save(formGroup.value, formGroup.valid)">
+      <mat-form-field>
+        <input matInput placeholder="BSB" formControlName="bsb" type="number" minlength="6" maxlength="6"  required>
+      </mat-form-field>
+      <small [hidden]="formGroup.controls.bsb.valid || (formGroup.controls.bsb.pristine && !submitted)" class="text-danger">
+          BSB code is required (6 characters).
+        </small>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Account Number" type="password" maxlength="11" minlength="11" formControlName="accountnumber"  required>
+      </mat-form-field>
+      <small [hidden]="formGroup.controls.accountnumber.valid || (formGroup.controls.accountnumber.pristine && !submitted)" class="text-danger">
+          Account Number is required (11 characters).
+        </small>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Confirm Account Number" type="number" maxlength="11" minlength="11" formControlName="confirmaccountnumber"
+          required>
+      </mat-form-field>
+      <small [hidden]="formGroup.controls.confirmaccountnumber.valid || (formGroup.controls.confirmaccountnumber.pristine && !submitted)" class="text-danger">
+          Account Number is required (11 characters).
+        </small>
+        <!-- <small [hidden]="formGroup.controls.confirmaccountnumber.valid && (formGroup.controls.confirmaccountnumber.text != formGroup.controls.accountnumber.text)" class="text-danger">
+            Account Number does not match.
+          </small>
+          <small [hidden]="formGroup.controls.confirmaccountnumber.valid && (formGroup.controls.confirmaccountnumber == formGroup.controls.accountnumber)" class="text-success">
+              Account Number match.
+            </small> -->
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Account Name" formControlName="accountname" required>
+      </mat-form-field>
+      <small [hidden]="formGroup.controls.accountname.valid || (formGroup.controls.accountname.pristine && !submitted)" class="text-danger">
+          Account Name is required.
+        </small>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Currency" formControlName="currency"   required>
+      </mat-form-field>
+      <small [hidden]="formGroup.controls.currency.valid || (formGroup.controls.currency.pristine && !submitted)" class="text-danger">
+          Currency is required.
+        </small>
+      <br/>
+      <mat-form-field>
+        <input matInput placeholder="Payment Amount" type="number" formControlName="amount" required>
+      </mat-form-field>
+      <small [hidden]="formGroup.controls.amount.valid || (formGroup.controls.amount.pristine && !submitted)" class="text-danger">
+          Amount is required.
+        </small>
+      <br/> 
+      <mat-form-field>
+        <input matInput placeholder="Reference" formControlName="reference" >
+      </mat-form-field>
+      <br/>
+      <button mat-button type="submit">Submit</button>
+    </form>
+  </div>
+</mat-card>

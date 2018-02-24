@@ -1,0 +1,75 @@
+<div class="container-fluid display-table">
+    <div class="row display-table-row">
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" style="width: 247px" id="navigation">            
+            <div class="navi">
+                <ul>
+                    <li [routerLinkActive]="['active']">
+                        <a [routerLink]="['/']">
+                            <i class="fa fa-th-large" aria-hidden="true"></i>
+                            <span class="hidden-xs hidden-sm">Payment Screen</span>
+                        </a>
+                    </li>                      
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10 col-sm-11 display-table-cell v-align">
+            <header>
+                <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="/" class="navbar-brand mr-0">
+                        <strong>PAYMENT PORTAL</strong>
+                    </a>
+                    <div class="header-rightside">
+                        <ul class="list-inline header-top pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="https://openclipart.org/image/2400px/svg_to_png/211821/matt-icons_preferences-desktop-personal.png" alt="user">
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="navbar-content">
+                                            <span>Test User</span>
+                                            <p class="text-muted small">
+                                                test@me.com
+                                            </p>
+                                            <div class="divider">
+                                            </div>
+                                            <a href="#" class="view btn-sm btn-danger active">Log Out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Router components load here -->
+            <router-outlet></router-outlet>
+
+            <!-- FOOTER can be treated as a separate component -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <strong>
+                        <hr />
+                        <div class="row  navbar-light bg-light justify-content-between">
+                            <div class="col-sm-4 footer-geo">
+                                <address>
+                                    © 2018 - Thanveer
+                                </address>
+                            </div>
+                            <div class="col-sm-4 footer-social text-center">
+                            </div>
+                            <div class="col-sm-4 footer-info">
+                            </div>
+                        </div>
+                    </strong>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</div>

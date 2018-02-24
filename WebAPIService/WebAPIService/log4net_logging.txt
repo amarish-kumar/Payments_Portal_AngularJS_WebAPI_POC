@@ -112,3 +112,110 @@ Origin: http://localhost:59849
 DNT: 1
 
 2018-02-23 17:40:25,392 [42] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:08:36,107 [9] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: keep-alive
+Accept: application/json
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US, en; q=0.9
+Host: localhost:59849
+Referer: http://localhost:59849/swagger/ui/index
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36
+Origin: http://localhost:59849
+
+2018-02-24 11:08:38,369 [9] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:23:12,899 [28] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Host: localhost:59849
+User-Agent: PostmanRuntime/7.1.1
+Postman-Token: 4f7aec2e-98de-42c8-819f-58bc9545f753
+
+2018-02-24 11:23:18,377 [28] INFO  WebAPIService.Controllers.PaymentsController - Request failed.
+System.ObjectDisposedException: Cannot write to a closed TextWriter.
+   at System.IO.__Error.WriterClosed()
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at WebAPIService.Helper.PaymentsHelper.SavePaymentDetails(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\PaymentsHelper.cs:line 30
+   at WebAPIService.Controllers.PaymentsController.Post(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Controllers\PaymentsController.cs:line 46
+2018-02-24 11:25:02,719 [12] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Host: localhost:59849
+User-Agent: PostmanRuntime/7.1.1
+Postman-Token: 6f051282-631e-4b7d-8954-93fa30c71a0c
+
+2018-02-24 11:25:04,735 [12] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:25:12,744 [9] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Host: localhost:59849
+User-Agent: PostmanRuntime/7.1.1
+Postman-Token: 22d8bda5-ca3d-458f-b241-9fe4c11eb15d
+
+2018-02-24 11:25:39,018 [9] INFO  WebAPIService.Controllers.PaymentsController - Request failed.
+System.ObjectDisposedException: Cannot write to a closed TextWriter.
+   at System.IO.__Error.WriterClosed()
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at WebAPIService.Helper.PaymentsHelper.SavePaymentDetails(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Utilities\PaymentsHelper.cs:line 30
+   at WebAPIService.Controllers.PaymentsController.Post(PaymentModel payment) in C:\Work\GitHub\AngularJS 2 + Web API\WebAPIService\WebAPIService\Controllers\PaymentsController.cs:line 46
+2018-02-24 11:26:49,911 [9] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Host: localhost:59849
+User-Agent: PostmanRuntime/7.1.1
+Postman-Token: 5f2fbe4e-95ea-47a1-9a35-0dde9fa821e5
+
+2018-02-24 11:26:52,320 [9] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:27:02,274 [8] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Cache-Control: no-cache
+Connection: keep-alive
+Accept: */*
+Accept-Encoding: gzip, deflate
+Host: localhost:59849
+User-Agent: PostmanRuntime/7.1.1
+Postman-Token: 8398bfc3-e1ec-41a6-88a5-31269d82ba74
+
+2018-02-24 11:27:04,281 [8] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:42:10,955 [10] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: Keep-Alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US, en; q=0.5
+Host: localhost:59849
+Referer: http://localhost:4200/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+Origin: http://localhost:4200
+
+2018-02-24 11:42:20,473 [10] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:42:51,293 [10] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: Keep-Alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US, en; q=0.5
+Host: localhost:59849
+Referer: http://localhost:4200/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+Origin: http://localhost:4200
+
+2018-02-24 11:42:54,184 [10] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:51:17,972 [18] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: Keep-Alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US, en; q=0.5
+Host: localhost:59849
+Referer: http://localhost:4200/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+Origin: http://localhost:4200
+
+2018-02-24 11:51:26,596 [18] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.
+2018-02-24 11:54:09,188 [18] INFO  WebAPIService.Controllers.PaymentsController - Request recieved from Client. Details: Connection: Keep-Alive
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US, en; q=0.5
+Host: localhost:59849
+Referer: http://localhost:4200/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393
+Origin: http://localhost:4200
+
+2018-02-24 11:54:10,708 [18] INFO  WebAPIService.Controllers.PaymentsController - Request processed successfully.

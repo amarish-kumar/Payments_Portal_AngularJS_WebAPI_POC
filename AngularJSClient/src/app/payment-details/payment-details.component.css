@@ -1,0 +1,8 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group > * {    
+    max-width: 500px;
+  }

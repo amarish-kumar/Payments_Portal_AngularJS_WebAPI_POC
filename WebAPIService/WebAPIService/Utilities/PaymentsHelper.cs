@@ -31,8 +31,7 @@ namespace WebAPIService.Helper
             }
             finally
             {
-                if (writer != null)
-                    writer.Close();
+                
             }
         }
     }
